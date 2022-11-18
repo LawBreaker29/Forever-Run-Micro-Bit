@@ -29,7 +29,7 @@ This image may take a few minutes to refresh.
 
 * for PXT/microbit::
 
-   <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+   
    
 <details><summary>Terms of Use</summary>
 <p>
@@ -37,7 +37,7 @@ This image may take a few minutes to refresh.
 #### yes, even hidden code blocks!
 
 ```python
-print("hello world!")
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
 ```
 
 </p>
