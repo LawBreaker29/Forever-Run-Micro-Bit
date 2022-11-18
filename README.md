@@ -25,16 +25,14 @@ This image may take a few minutes to refresh.
 
 ![A rendered view of the blocks](https://github.com/lawbreaker29/lesson-24-final-lesson/raw/master/.github/makecode/blocks.png)
 
-#### Metadata (used for search, rendering)
 
-* for PXT/microbit::
 
    
    
-<details><summary>Terms of Use</summary>
+<details><summary>Metadata (used for search, rendering)</summary>
 <p>
 
-#### yes, even hidden code blocks!
+#### *For PXT/microbit:
 
 ```python
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
