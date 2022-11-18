@@ -1,5 +1,5 @@
 
-> Open this page at [https://lawbreaker29.github.io/Forever-Run-Micro-Bit/](https://lawbreaker29.github.io/Forever-Run-Mirco-Bit/)
+> Open this page at [https://https://lawbreaker29.github.io/Forever-Run-Micro-Bit/](https://lawbreaker29.github.io/Forever-Run-Micro-Bit/)
 
 ## Use as Extension
 
