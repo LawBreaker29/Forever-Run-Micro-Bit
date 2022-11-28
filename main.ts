@@ -1,3 +1,8 @@
+// The loop for the music to run forever
+music.onEvent(MusicEvent.BackgroundMelodyEnded, function () {
+    music.startMelody(mario2Body, MelodyOptions.OnceInBackground)
+})
+// When A is pressed
 input.onButtonPressed(Button.A, function () {
     // Starting (the variable) is turned on (1) when button A is pressed. This waits until A is pressed to create the spirites.
     while (!(starting == 0)) {
@@ -10,8 +15,9 @@ input.onButtonPressed(Button.A, function () {
     // Brodcasting that the A starts
     starting = 1
 })
-// When button B is pressed
+// When button B is pressed (this input for jumping)
 input.onButtonPressed(Button.B, function () {
+    // Repeat twice
     for (let index = 0; index < 2; index++) {
         sprite.change(LedSpriteProperty.Y, -1)
         // Pauses in between the jumps
@@ -27,10 +33,6 @@ input.onButtonPressed(Button.B, function () {
         // Pauses in between the jumps
         basic.pause(100)
     }
-})
-// The loop for the music to run forever
-music.onEvent(MusicEvent.BackgroundMelodyEnded, function () {
-    music.startMelody(mario2Body, MelodyOptions.OnceInBackground)
 })
 // Starts the code once the button A is pressed.
 let score = 0
@@ -319,4 +321,3 @@ basic.forever(function () {
         }
     }
 })
-
