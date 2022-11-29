@@ -308,10 +308,10 @@ basic.forever(function () {
         if (obstacles.isTouching(sprite) || sprite.isTouching(obstacles)) {
             // Since the score block is buggy but is a needed element, it is set to the variable "score".
             game.setScore(score)
-            // Plays death sound 3 times
-            music.playSoundEffect(music.createSoundEffect(WaveShape.Square, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), SoundExpressionPlayMode.UntilDone)
-            music.playSoundEffect(music.createSoundEffect(WaveShape.Square, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), SoundExpressionPlayMode.UntilDone)
-            music.playSoundEffect(music.createSoundEffect(WaveShape.Square, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), SoundExpressionPlayMode.UntilDone)
+            for (let index = 0; index < 3; index++) {
+                // Plays death sound 3 times
+                music.playSoundEffect(music.createSoundEffect(WaveShape.Square, 1600, 1, 255, 0, 300, SoundExpressionEffect.None, InterpolationCurve.Curve), SoundExpressionPlayMode.UntilDone)
+            }
             // Deletes remaining obstacles so it doesn't bug
             obstacles.delete()
             // Broadcast game over. A+B to restart
