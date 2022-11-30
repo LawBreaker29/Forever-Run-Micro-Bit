@@ -4,6 +4,7 @@ music.onEvent(MusicEvent.BackgroundMelodyEnded, function () {
 })
 // When A is pressed
 input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Yes)
     // Starting (the variable) is turned on (1) when button A is pressed. This waits until A is pressed to create the spirites.
     while (!(starting == 0)) {
         basic.pause(.00001)
